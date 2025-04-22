@@ -12,8 +12,8 @@ public class Rocket extends Actor
         }
         
         if (isTouching (Hero.class)) {
-            Rocket rocket = new Rocket();
-            getWorld().addObject (rocket, 100, 100);
+            Skull skull = new Skull();
+            getWorld().addObject (skull, 300, 200);
             getWorld().removeObject(this);
         }
     }

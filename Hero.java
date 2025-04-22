@@ -16,6 +16,10 @@ public class Hero extends Actor
             currentY -= 10;
         }
         
+<<<<<<< HEAD
         setLocation (500, currentY);
+=======
+    
+>>>>>>> d3b0b53c1a25034b689b3473b59c9de2d9c58e2c
     }
 }
