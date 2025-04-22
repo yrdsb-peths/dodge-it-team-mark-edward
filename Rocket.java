@@ -5,7 +5,7 @@ public class Rocket extends Actor
 {
     public void act()
     {
-        move(10);
+        move(30);
         
         if (getX() >= 599) {
             resetRocket();
@@ -15,6 +15,10 @@ public class Rocket extends Actor
             Skull skull = new Skull();
             getWorld().addObject (skull, 300, 200);
             getWorld().removeObject(this);
+            
+            Actor hero = getOneIntersectingObject(Hero.class);
+            getWorld().removeObject(hero);
+           
         }
     }
     
