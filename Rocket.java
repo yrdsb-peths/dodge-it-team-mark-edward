@@ -7,8 +7,8 @@ public class Rocket extends Actor
     {
         move(10);
         
-        if (getX() <=0) {
-            resetBread();
+        if (getX() >= 599) {
+            resetRocket();
         }
         
         if (isTouching (Hero.class)) {
@@ -18,13 +18,13 @@ public class Rocket extends Actor
         }
     }
     
-    public void resetBread() {
+    public void resetRocket() {
         int num = Greenfoot.getRandomNumber(2);
         if (num == 0) {
-            setLocation (500,100);
+            setLocation (100,100);
         }
         else {
-        setLocation (500,300);
+        setLocation (100,300);
     }
     }
 }
